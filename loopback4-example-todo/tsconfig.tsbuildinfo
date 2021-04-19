@@ -1941,6 +1941,16 @@
         "signature": "b48c025c91d1073811192363f2627972fa16404ec73c39a75bb59dd8501d69dd",
         "affectsGlobalScope": false
       },
+      "./src/types.ts": {
+        "version": "84867644653e64f9ea4d16dad4eda02b457a87c54f1504fec0a016d7e931c638",
+        "signature": "356ffa775b9b5ffc5621a4371191e50c309b262e9d941eff5c7d18e309ecc078",
+        "affectsGlobalScope": false
+      },
+      "./src/keys.ts": {
+        "version": "ba7815f0b7bf67cd38d286fb1e830fa5f8be6b986cfbf0661c3a895ab2858b23",
+        "signature": "619eeb59017016efdfed9367032a6633f7bfa7f20831ae6ae06bc98d39acc760",
+        "affectsGlobalScope": false
+      },
       "./src/migrate.ts": {
         "version": "9ae750f4d29abcd95af1f788bc6c61e42f90cb6e18cea6978b9596baea8b4bad",
         "signature": "e9b8dbbcc0cb738d2836845996cec05b75916fe8314d6d515028b0cab71df9c9",
@@ -2181,6 +2191,16 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
+      "./src/controllers/filedownloadcontroller.ts": {
+        "version": "899db8a17df9e594a899079b72e0907d63d564ef3fae54f3ee571508822f264c",
+        "signature": "b3e78a253fe14eeaaeaf1790ecd57b13f00dcb0c36f17c1f749de65bc55bf165",
+        "affectsGlobalScope": false
+      },
+      "./src/controllers/fileuploadcontroller.ts": {
+        "version": "932cac62220a640a3fdf52ed8893f8a4a70fb7ccf08f6a8a705e5c5cb4a41223",
+        "signature": "6b19d2c1e63b8253405cf72ff707e38619387bd75ccf5012c2b7d155984bae1c",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/fs-extra/index.d.ts": {
         "version": "8d01c38ccb9af3a4035a68818799e5ef32ccc8cf70bdb83e181e1921d7ad32f6",
         "signature": "8d01c38ccb9af3a4035a68818799e5ef32ccc8cf70bdb83e181e1921d7ad32f6",
@@ -2199,6 +2219,11 @@
       "./node_modules/@types/mocha/index.d.ts": {
         "version": "0359800d3b440f8515001431cde1500944e156040577425eb3f7b80af0846612",
         "signature": "0359800d3b440f8515001431cde1500944e156040577425eb3f7b80af0846612",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/multer/index.d.ts": {
+        "version": "45db8351a5c289dffc40d01ce829f21f25ea7a1831eaafd74f915aa42d5d8353",
+        "signature": "45db8351a5c289dffc40d01ce829f21f25ea7a1831eaafd74f915aa42d5d8353",
         "affectsGlobalScope": true
       },
       "./node_modules/@types/on-finished/index.d.ts": {
@@ -3835,6 +3860,10 @@
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
+      "./node_modules/@types/multer/index.d.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
       "./node_modules/@types/node/base.d.ts": [
         "./node_modules/@types/node/assert.d.ts",
         "./node_modules/@types/node/ts3.6/base.d.ts"
@@ -4168,6 +4197,22 @@
         "./src/datasources/index.ts",
         "./src/sequence.ts"
       ],
+      "./src/controllers/filedownloadcontroller.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/path.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/keys.ts"
+      ],
+      "./src/controllers/fileuploadcontroller.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/keys.ts",
+        "./src/types.ts"
+      ],
       "./src/controllers/index.ts": [
         "./node_modules/tslib/tslib.d.ts",
         "./src/controllers/todo.controller.ts",
@@ -4216,6 +4261,11 @@
         "./src/models/index.ts",
         "./src/repositories/index.ts"
       ],
+      "./src/keys.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/types.ts"
+      ],
       "./src/migrate.ts": [
         "./node_modules/tslib/tslib.d.ts",
         "./src/application.ts"
@@ -4257,6 +4307,10 @@
       "./src/services/index.ts": [
         "./node_modules/tslib/tslib.d.ts",
         "./src/services/geocoder.service.ts"
+      ],
+      "./src/types.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts",
+        "./node_modules/tslib/tslib.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -5858,6 +5912,10 @@
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
+      "./node_modules/@types/multer/index.d.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts"
+      ],
       "./node_modules/@types/node/base.d.ts": [
         "./node_modules/@types/node/assert.d.ts",
         "./node_modules/@types/node/ts3.6/base.d.ts"
@@ -6142,6 +6200,13 @@
         "./node_modules/@loopback/repository/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts"
       ],
+      "./src/controllers/filedownloadcontroller.ts": [
+        "./node_modules/@loopback/rest/dist/index.d.ts"
+      ],
+      "./src/controllers/fileuploadcontroller.ts": [
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./src/types.ts"
+      ],
       "./src/controllers/index.ts": [
         "./src/controllers/todo.controller.ts",
         "./src/controllers/user.controller.ts"
@@ -6176,6 +6241,10 @@
         "./src/models/index.ts",
         "./src/repositories/index.ts"
       ],
+      "./src/keys.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./src/types.ts"
+      ],
       "./src/models/index.ts": [
         "./src/models/todo.model.ts"
       ],
@@ -6199,6 +6268,9 @@
       ],
       "./src/services/index.ts": [
         "./src/services/geocoder.service.ts"
+      ],
+      "./src/types.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -6501,6 +6573,7 @@
       "./node_modules/@types/minimatch/index.d.ts",
       "./node_modules/@types/mocha/index.d.ts",
       "./node_modules/@types/morgan/index.d.ts",
+      "./node_modules/@types/multer/index.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",
       "./node_modules/@types/node/base.d.ts",
@@ -6628,6 +6701,8 @@
       "./src/__tests__/integration/services/geocoder.service.integration.ts",
       "./src/__tests__/unit/controllers/todo.controller.unit.ts",
       "./src/application.ts",
+      "./src/controllers/filedownloadcontroller.ts",
+      "./src/controllers/fileuploadcontroller.ts",
       "./src/controllers/index.ts",
       "./src/controllers/todo.controller.ts",
       "./src/controllers/user.controller.ts",
@@ -6635,6 +6710,7 @@
       "./src/datasources/geocoder.datasource.ts",
       "./src/datasources/index.ts",
       "./src/index.ts",
+      "./src/keys.ts",
       "./src/migrate.ts",
       "./src/models/index.ts",
       "./src/models/todo.model.ts",
@@ -6643,7 +6719,8 @@
       "./src/repositories/todo.repository.ts",
       "./src/sequence.ts",
       "./src/services/geocoder.service.ts",
-      "./src/services/index.ts"
+      "./src/services/index.ts",
+      "./src/types.ts"
     ]
   },
   "version": "4.2.4"
